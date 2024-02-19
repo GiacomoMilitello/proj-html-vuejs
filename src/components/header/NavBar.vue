@@ -1,6 +1,11 @@
 <script>
+import Carousel from "../Carousel.vue";
+
 export default {
   name: "NavBar",
+  components: {
+    Carousel,
+},
   props: [
     'navLinks',
     'buyLinks'
@@ -28,6 +33,8 @@ export default {
 
 <template>
   <div id="nav-bar">
+
+<!-- -- LINKS NAV-BAR -- -->
     <ul class="w-75 mx-auto d-flex justify-content-between align-items-center py-4">
         <li class="btn-orange text-uppercase">order online</li>
         <li>
@@ -48,25 +55,8 @@ export default {
         </li>
     </ul>
 
-    <div id="carouselExampleRide" class="carousel slide carousel-fade" data-bs-ride="true">
-  <div class="carousel-inner">
-    <div class="carousel-item" v-for="(image, index) in revImages" :key="index" :class="{ active: index === 0 }">
-      <div id="back" :style="{ backgroundImage: 'url(' + image.back + ')' }">
-        <figure class="w-25 mx-auto">
-        <img :src="image.img" class="d-block w-100 img-fluid" alt="Image">
-      </figure>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+<!-- -- CAROUSEL NAV-BAR -- -->
+<Carousel :images="revImages" :backgrounds="revImages" />
   </div>
 </template>
 
@@ -92,14 +82,5 @@ export default {
   ul img{
     max-width: 140px;
   };
-  #carouselExampleRide{
-    #back{
-      @include bg-contain;
-    }
-    img{
-      max-width: 280px
-    };
-  }
-  
 }
 </style>
