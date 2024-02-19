@@ -1,17 +1,17 @@
 <script>
-import ExampleName from "./components/ExampleName.vue";
+import Top from "./components/header/Top.vue";
 
 export default {
   components: {
-    ExampleName,
+    Top,
   },
 };
 </script>
 
 <template>
-  <h1>Hello World</h1>
-
-  <ExampleName />
+  <header>
+    <Top/>
+  </header>
 </template>
 
 <style lang="scss">

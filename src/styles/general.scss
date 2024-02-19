@@ -2,7 +2,12 @@
 @use "./partials/mixins" as *;
 @import "bootstrap/scss/bootstrap";
 
-h1 {
-    color: $font-color;
-    @include main-font-center;
+ul{
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+figure{
+    margin: 0;
 }
