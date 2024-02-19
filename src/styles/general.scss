@@ -2,6 +2,9 @@
 @use "./partials/mixins" as *;
 @import "bootstrap/scss/bootstrap";
 
+a{
+    text-decoration: none;
+}
 ul{
     margin-bottom: 0;
     padding-left: 0;
@@ -10,4 +13,15 @@ ul{
 
 figure{
     margin: 0;
+}
+
+.btn-orange{
+    background-color: $orange;
+    color: $white;
+    padding: 10px 25px;
+    cursor: pointer;
+    &:hover{
+        background-color: $strong-yellow;
+        color: $black;
+    }
 }

@@ -11,7 +11,7 @@ export default {
       navLinks: [
         {
           link : 'home',
-          svg : 'src/svg/svg-0.svg',
+          img : 'src/svg/svg-0.svg',
         },
         {
           link : 'pages',
@@ -20,7 +20,7 @@ export default {
           link : 'menu',
         },
         {
-          img : 'src/img/h5-logo-divided-header'
+          img : 'src/img/h5-logo-divided-header.png'
         },
         {
           link : 'event',
@@ -35,11 +35,11 @@ export default {
       buyLinks: [
         {
           link : 'cart',
-          svg : 'src/svg/svg-1.svg',
+          img : 'src/svg/svg-1.svg',
         },
         {
           link : 'search',
-          svg : 'src/svg/svg-2.svg',
+          img : 'src/svg/svg-2.svg',
         },
       ],
     }
@@ -48,15 +48,10 @@ export default {
 </script>
 
 <template>
-  <NavBar/>
+  <NavBar :navLinks="navLinks" :buyLinks="buyLinks"/>
 </template>
 
 <style lang="scss" scoped>
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
-
-// h1 {
-//   color: $font-color-second;
-//   @include main-font-start;
-// }
 </style>
