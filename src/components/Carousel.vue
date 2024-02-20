@@ -73,12 +73,15 @@ export default {
     .next{
       height: 60px;
       width: 60px;
-      background-color: white;
+      background-color: $white;
       border-radius: 50%;
       padding: 10px;
       background-position: 10px center;
       background-repeat: no-repeat;
       background-size: 15%;
+      // &:hover{
+      //   background-color: $off-white;
+      // }
     }
     .prev{
       background-image: url(../img/prev.png);

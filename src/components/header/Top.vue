@@ -1,11 +1,13 @@
 <script>
 import NavBar from "./NavBar.vue";
+import HeaderBottom from "./HeaderBottom.vue";
 
 export default {
   name: "Top",
   components: {
     NavBar,
-  },
+    HeaderBottom,
+},
   data() {
     return {
       navLinks: [
@@ -49,6 +51,7 @@ export default {
 
 <template>
   <NavBar :navLinks="navLinks" :buyLinks="buyLinks"/>
+  <HeaderBottom/>
 </template>
 
 <style lang="scss" scoped>

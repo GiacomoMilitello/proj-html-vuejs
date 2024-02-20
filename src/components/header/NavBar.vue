@@ -56,7 +56,7 @@ export default {
     </ul>
 
 <!-- -- CAROUSEL NAV-BAR -- -->
-<Carousel :images="revImages" :backgrounds="revImages" />
+    <Carousel :images="revImages" :backgrounds="revImages" />
   </div>
 </template>
 
