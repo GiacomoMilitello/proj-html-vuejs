@@ -74,12 +74,7 @@ export default {
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
 
-.orange{
-        color: $orange;
-    }
-.light-ochre{
-    color: $light-ochre;
-}
+
 #menu{
     h4{
         font-size: 250%;

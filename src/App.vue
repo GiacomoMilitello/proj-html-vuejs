@@ -1,9 +1,10 @@
 <script>
 import Top from "./components/header/Top.vue";
-import Specials from "./components/main/Specials.vue"
-import Jumbo from "./components/main/Jumbo.vue"
-import TeamClients from "./components/main/TeamClients.vue"
-import Menu from "./components/main/Menu.vue"
+import Specials from "./components/main/Specials.vue";
+import Jumbo from "./components/main/Jumbo.vue";
+import TeamClients from "./components/main/TeamClients.vue";
+import Menu from "./components/main/Menu.vue";
+import PizzaDeals from "./components/main/PizzaDeals.vue";
 
 export default {
   components: {
@@ -12,6 +13,7 @@ export default {
     Jumbo,
     TeamClients,
     Menu,
+    PizzaDeals,
   },
 };
 </script>
@@ -27,6 +29,7 @@ export default {
     <Jumbo/>
     <TeamClients/>
     <Menu/>
+    <PizzaDeals/>
   </main>
   
 </template>
