@@ -1,11 +1,13 @@
 <script>
 import Top from "./components/header/Top.vue";
 import Specials from "./components/main/Specials.vue"
+import Jumbo from "./components/main/Jumbo.vue"
 
 export default {
   components: {
     Top,
     Specials,
+    Jumbo,
   },
 };
 </script>
@@ -18,6 +20,7 @@ export default {
 
   <main>
     <Specials/>
+    <Jumbo/>
   </main>
   
 </template>

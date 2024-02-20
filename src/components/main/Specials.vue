@@ -40,7 +40,7 @@ export default {
                 <ul class="mt-4">
                     <li v-for="(special, index) in specials" :key="index" class="row">
                         <span class="col-2 fw-bold">$ {{ special.price }}</span>
-                        <h5 class="col-10"> {{ special.name }}</h5>
+                        <h5 class="col-10 text-uppercase "> {{ special.name }}</h5>
                         <span class="col-2"></span>
                         <p class="col-10">{{ special.description }}</p>
                     </li>
