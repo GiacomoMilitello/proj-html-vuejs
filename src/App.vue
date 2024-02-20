@@ -3,6 +3,7 @@ import Top from "./components/header/Top.vue";
 import Specials from "./components/main/Specials.vue"
 import Jumbo from "./components/main/Jumbo.vue"
 import TeamClients from "./components/main/TeamClients.vue"
+import Menu from "./components/main/Menu.vue"
 
 export default {
   components: {
@@ -10,6 +11,7 @@ export default {
     Specials,
     Jumbo,
     TeamClients,
+    Menu,
   },
 };
 </script>
@@ -24,6 +26,7 @@ export default {
     <Specials/>
     <Jumbo/>
     <TeamClients/>
+    <Menu/>
   </main>
   
 </template>

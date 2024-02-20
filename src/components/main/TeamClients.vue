@@ -28,10 +28,10 @@ export default {
                 },
             ],
             clients: [
+                { url : 'src/img/h1-clients-img-4.png' },
+                { url : 'src/img/h1-clients-img-3.png' },
                 { url : 'src/img/h1-clients-img-1.png' },
                 { url : 'src/img/h1-clients-img-2.png' },
-                { url : 'src/img/h1-clients-img-3.png' },
-                { url : 'src/img/h1-clients-img-4.png' },
                 { url : 'src/img/h1-clients-img-5.png' },
             ]
         };
