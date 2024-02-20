@@ -6,7 +6,7 @@ export default {
 
 <template>
     
-    <div id="jumbo" class="my-2">
+    <div id="jumbo" class="">
 
 <!-- BACKGROUNDS -->
         <div class="row small bottom">
