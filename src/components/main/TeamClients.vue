@@ -27,6 +27,13 @@ export default {
                     job: 'Pizza Chef'
                 },
             ],
+            clients: [
+                { url : 'src/img/h1-clients-img-1.png' },
+                { url : 'src/img/h1-clients-img-2.png' },
+                { url : 'src/img/h1-clients-img-3.png' },
+                { url : 'src/img/h1-clients-img-4.png' },
+                { url : 'src/img/h1-clients-img-5.png' },
+            ]
         };
     }
 };
@@ -64,8 +71,10 @@ export default {
     </div>
 
 <!-- -- CLIENTS -- -->
-    <div>
-
+    <div id="clients" class="d-flex justify-content-center align-items-center p-5">
+        <figure v-for="(client, index) in clients" :key="index">
+            <img :src="client.url" alt="">
+        </figure>
     </div>
 </template>
 
@@ -95,10 +104,6 @@ export default {
             background-size: contain;
             z-index: 1;
 
-            &:hover {
-                
-            }
-
             & > div {
                 background-color: $orange;
                 width: 90%;
@@ -121,6 +126,15 @@ export default {
                     }
                 }
             }
+        }
+    }
+}
+
+#clients{
+    background-color: $light-ecru;
+    figure{
+        &:hover{
+            cursor: pointer;
         }
     }
 }
