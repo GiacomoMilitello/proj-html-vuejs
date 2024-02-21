@@ -17,7 +17,15 @@ export default {
     PizzaDeals,
     Bottom,
   },
+  data() {
+    return {
+      itemsCount: 0,
+    };
+  },
   methods: {
+    incrementItems() {
+      this.itemsCount++;
+    },
     scrollToNavBar: function() {
       document.getElementById('up').addEventListener('click', function(event) {
         event.preventDefault();
@@ -34,14 +42,14 @@ export default {
 <template>
 
   <header class="d-flex flex-column gap-2">
-    <Top/>
+    <Top :itemsCount="itemsCount"/>
   </header>
 
   <main class="d-flex flex-column gap-2">
     <Specials/>
     <Jumbo/>
     <TeamClients/>
-    <Menu/>
+    <Menu :incrementItems="incrementItems"/>
     <PizzaDeals/>
   </main>
 

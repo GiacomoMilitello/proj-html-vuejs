@@ -1,9 +1,12 @@
 <script>
 export default {
-  name: "Menu",
-  components: {
+    name: "Menu",
+    props: [
+        'incrementItems'
+    ],
+    components: {
 },
-  data() {
+    data() {
         return {
             pizzas: [
                 {
@@ -45,7 +48,12 @@ export default {
                 },
             ],
         };
-    }
+    },
+    methods: {
+    increment() {
+      this.$emit('increment');
+    },
+  },
 };
 </script>
 
@@ -56,7 +64,7 @@ export default {
         <p class="w-50 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consequuntur ad veniam quidem qui error ea mollitia incidunt necessitatibus, fuga repellat? Maxime illum hic eius exercitationem ipsum iusto dolore neque!</p>
     </div>
     <div class="d-flex align-items-center justify-content-evenly my-5">
-        <div v-for="(pizza, index) in pizzas" :key="index" class="d-flex flex-column justify-content-center align-items-center ">
+        <div v-for="(pizza, index) in pizzas" :key="index" class="d-flex flex-column justify-content-center align-items-center my-pointer" @click="incrementItems">
             <figure>
                 <img :src="pizza.img" alt="">
                 <span v-if="pizza.sold" class="sold fw-bold">SOLD</span>
@@ -74,7 +82,9 @@ export default {
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
 
-
+.my-pointer{
+    cursor: pointer;
+}
 #menu{
     h4{
         font-size: 250%;

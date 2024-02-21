@@ -8,7 +8,8 @@ export default {
 },
   props: [
     'navLinks',
-    'buyLinks'
+    'buyLinks',
+    'itemsCount'
   ],
   data() {
         return {
@@ -50,7 +51,7 @@ export default {
               <a v-for="(link, index) in buyLinks" :key="index" href="#" class="text-uppercase d-flex align-items-center gap-1">
                 <img v-if="link.img" :src="link.img" alt="icon" />
                 {{ link.link }}
-                <span v-if="link.items" class="items fw-bold text-center ">0</span>
+                <span v-if="link.items" class="items fw-bold text-center ">{{ itemsCount }}</span>
               </a>
             </li>
         </li>

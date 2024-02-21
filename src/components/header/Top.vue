@@ -7,7 +7,10 @@ export default {
   components: {
     NavBar,
     HeaderBottom,
-},
+  },
+  props: [
+    'itemsCount'
+  ],
   data() {
     return {
       navLinks: [
@@ -46,12 +49,12 @@ export default {
         },
       ],
     }
-  }
+  },
 };
 </script>
 
 <template>
-  <NavBar :navLinks="navLinks" :buyLinks="buyLinks"/>
+  <NavBar :navLinks="navLinks" :buyLinks="buyLinks" :itemsCount="itemsCount"/>
   <HeaderBottom/>
 </template>
 
