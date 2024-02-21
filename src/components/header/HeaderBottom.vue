@@ -59,7 +59,7 @@ export default {
         </figure>
     </div>
 
-    <IndicatorsCarousel :items="reviews" />
+    <IndicatorsCarousel :items="reviews" class="mb-2"/>
     
 </template>
 

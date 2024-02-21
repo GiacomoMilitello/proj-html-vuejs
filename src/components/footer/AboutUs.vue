@@ -5,7 +5,6 @@ export default {
     'restaurants',
     'hours'
   ],
-  
 };
 </script>
 

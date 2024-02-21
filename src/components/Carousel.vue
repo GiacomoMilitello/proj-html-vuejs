@@ -20,7 +20,7 @@ export default {
   <div class="carousel-inner">
     <div class="carousel-item" v-for="(image, index) in images" :key="index" :class="{ active: index === 0 }">
       <div id="back" :style="{ backgroundImage: 'url(' + image.back + ')' }">
-        <figure class="w-25 mx-auto">
+        <figure class="w-25 mx-auto d-flex justify-content-center ">
         <img :src="image.img" class="d-block w-100 img-fluid" alt="Image">
       </figure>
       </div>

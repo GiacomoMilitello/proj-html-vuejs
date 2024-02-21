@@ -1,23 +1,13 @@
 <script>
 export default {
   name: "Book",
-  components: {
-  },
-  data() {
-    return {
-    };
-  },
-  methods: {
-    
-  },
-  mounted() {
-    
-  }
 };
 </script>
 
 <template>
-    <div id="book" class="p-5 d-flex align-items-center justify-content-center">
+    <div id="book" class="p-5 mt-2 d-flex align-items-center justify-content-center">
+
+<!-- input people -->
         <div class="width-one input-group my-5">
             <input id="myInput" type="text" class="form-control d-flex align-items-center " aria-label="Text input with dropdown button" placeholder="1 Person" >
             <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -35,10 +25,12 @@ export default {
 
         <h4 class="width-two white text-center my-5">FOR</h4>
 
+<!-- input date -->
         <input class="width-one d-flex align-items-center" type="date" id="data" name="data">
 
         <h4 class="width-two white text-center my-5">AT</h4>
-
+        
+<!-- input hours -->
         <div class="width-one input-group">
             <input id="myInput" type="text" class="form-control d-flex align-items-center " aria-label="Text input with dropdown button" placeholder="7:00 pm" >
             <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
