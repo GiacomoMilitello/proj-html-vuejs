@@ -23,6 +23,7 @@ a{
     position: fixed;
     right: 40px;
     bottom: 40px;
+    z-index: 3;
     &:hover{
         background-color: $light-ecru;
     }

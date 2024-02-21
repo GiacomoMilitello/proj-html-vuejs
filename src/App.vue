@@ -5,8 +5,7 @@ import Jumbo from "./components/main/Jumbo.vue";
 import TeamClients from "./components/main/TeamClients.vue";
 import Menu from "./components/main/Menu.vue";
 import PizzaDeals from "./components/main/PizzaDeals.vue";
-import Book from "./components/footer/Book.vue";
-import AboutUs from "./components/footer/AboutUs.vue";
+import Bottom from "./components/footer/Bottom.vue";
 
 export default {
   components: {
@@ -16,9 +15,19 @@ export default {
     TeamClients,
     Menu,
     PizzaDeals,
-    Book,
-    AboutUs,
+    Bottom,
   },
+  methods: {
+    scrollToNavBar: function() {
+      document.getElementById('up').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('nav-bar').scrollIntoView({behavior: 'smooth'});
+      });
+    }
+  },
+  mounted() {
+    this.scrollToNavBar();
+  }
 };
 </script>
 
@@ -37,8 +46,7 @@ export default {
   </main>
 
   <footer class="d-flex flex-column gap-2">
-    <Book/>
-    <AboutUs/>
+    <Bottom/>
   </footer>
 
   <a id="up" class="d-flex align-items-center justify-content-center" href="">
