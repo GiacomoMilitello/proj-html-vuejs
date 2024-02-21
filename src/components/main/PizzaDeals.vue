@@ -59,9 +59,6 @@ export default {
 
 <!-- right -->
         <div class="col-6">
-            <figure class="h-100 w-100">
-                <img class="img-fluid" src="../../img/h3-img-5a.jpg" alt="">
-            </figure>
         </div>
 
     </div>
@@ -72,6 +69,10 @@ export default {
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
 
+.col-6:last-of-type{
+        background-image: url(../../img/h3-img-5a.jpg);
+        @include bg-cover;
+    }
 #pizza-love{
     background-color: $dark-gray;
     background-image: url(../../img/cielostellato.PNG);

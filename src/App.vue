@@ -5,7 +5,8 @@ import Jumbo from "./components/main/Jumbo.vue";
 import TeamClients from "./components/main/TeamClients.vue";
 import Menu from "./components/main/Menu.vue";
 import PizzaDeals from "./components/main/PizzaDeals.vue";
-import Book from "./components/footer/Book.vue"
+import Book from "./components/footer/Book.vue";
+import AboutUs from "./components/footer/AboutUs.vue";
 
 export default {
   components: {
@@ -16,6 +17,7 @@ export default {
     Menu,
     PizzaDeals,
     Book,
+    AboutUs,
   },
 };
 </script>
@@ -36,6 +38,7 @@ export default {
 
   <footer>
     <Book/>
+    <AboutUs/>
   </footer>
   
 </template>
