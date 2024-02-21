@@ -24,7 +24,7 @@ export default {
 
 <template>
 
-  <header>
+  <header class="d-flex flex-column gap-2">
     <Top/>
   </header>
 
@@ -36,13 +36,18 @@ export default {
     <PizzaDeals/>
   </main>
 
-  <footer>
+  <footer class="d-flex flex-column gap-2">
     <Book/>
     <AboutUs/>
   </footer>
+
+  <a id="up" class="d-flex align-items-center justify-content-center" href="">
+    <img src="./svg/svg-4.svg" alt="">
+  </a>
   
 </template>
 
 <style lang="scss">
 @use "./styles/general.scss";
+
 </style>

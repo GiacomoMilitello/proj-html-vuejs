@@ -1,9 +1,10 @@
 <script>
-// import IndicatorCarousel from "../IndicatorCarousel.vue";
+import IndicatorsCarousel from '../IndicatorsCarousel.vue';
 
 export default {
   name: "HeaderBottom",
   components: {
+    IndicatorsCarousel
 },
   data() {
         return {
@@ -13,6 +14,38 @@ export default {
                 { img : 'src/img/h3-img-3.jpg' },
                 { img : 'src/img/h3-img-4.jpg' },
             ],
+            reviews: [
+                {
+                    back: 'src/img/h3-testimonials-bckgrnd.jpg',
+                    review: 'forget the trendy pizza shops, this hidden spot makes the best new york-style pizza slice in naples',
+                    magazine: "Washington Post 2018"
+                },
+                {
+                    back: 'src/img/h3-testimonials-bckgrnd.jpg',
+                    review: 'this pizzeria serves the most authentic Neapolitan pizza in the heart of the city',
+                    magazine: "The Guardian 2024"
+                },
+                {
+                    back: 'src/img/h3-testimonials-bckgrnd.jpg',
+                    review: 'a must-visit for pizza lovers, this place offers a unique twist on classic Margherita',
+                    magazine: "The New York Times 2023"
+                },
+                {
+                    back: 'src/img/h3-testimonials-bckgrnd.jpg',
+                    review: 'with a perfect balance of flavors, the pizza at this place is a culinary masterpiece',
+                    magazine: "The Telegraph 2022"
+                },
+                {
+                    back: 'src/img/h3-testimonials-bckgrnd.jpg',
+                    review: 'the wood-fired pizzas at this joint take you on a gastronomic journey',
+                    magazine: "Los Angeles Times 2023"
+                },
+                {
+                    back: 'src/img/h3-testimonials-bckgrnd.jpg',
+                    review: 'this pizzeria, with its innovative toppings and perfect crust, sets the bar high',
+                    magazine: "Chicago Tribune 2024"
+                }
+            ]
         };
     }
 };
@@ -26,7 +59,7 @@ export default {
         </figure>
     </div>
 
-    <h2 class="text-center my-5">QUA CAROSELLO CON INDICATORI</h2>
+    <IndicatorsCarousel :items="reviews" />
     
 </template>
 
