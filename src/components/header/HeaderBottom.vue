@@ -47,7 +47,22 @@ export default {
                 }
             ]
         };
-    }
+    },
+    methods: {
+  openImage() {
+    var svgs = document.querySelectorAll('svg');
+    svgs.forEach(function(svg) {
+      svg.addEventListener('click', function() {
+        var imgSrc = this.nextElementSibling.src;
+        var win = window.open();
+        win.document.write('<img src="' + imgSrc + '" style="width: 100%; height: 100%;">');
+      });
+    });
+  }
+},
+mounted() {
+  this.openImage();
+}
 };
 </script>
 
