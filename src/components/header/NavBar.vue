@@ -50,6 +50,7 @@ export default {
               <a v-for="(link, index) in buyLinks" :key="index" href="#" class="text-uppercase d-flex align-items-center gap-1">
                 <img v-if="link.img" :src="link.img" alt="icon" />
                 {{ link.link }}
+                <span v-if="link.items" class="items fw-bold text-center ">0</span>
               </a>
             </li>
         </li>
@@ -74,9 +75,21 @@ export default {
     height: 105px;
     color: $white;
     border-bottom: 3px solid transparent;
+    position: relative;
     &:hover{
       color: $orange;
       border-bottom: 3px solid $orange;
+    }
+    .items{
+      background-color: $white;
+      color: $orange;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      font-size: 80%;
+      position: absolute;
+      top: 32px;
+      left: -8px;
     }
   }
   ul img{

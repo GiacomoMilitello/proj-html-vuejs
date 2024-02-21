@@ -38,6 +38,7 @@ export default {
         {
           link : 'cart',
           img : 'src/svg/svg-1.svg',
+          items: true,
         },
         {
           link : 'search',
